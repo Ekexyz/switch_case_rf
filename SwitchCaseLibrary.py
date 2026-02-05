@@ -10,19 +10,6 @@ class SwitchCaseLibrary:
     This library allows you to define a mapping of values to keywords and
     their arguments, then execute the appropriate keyword based on a switch
     value.
-
-    Example usage in Robot Framework:
-
-    | *** Settings ***
-    | Library    SwitchCaseLibrary
-    |
-    | *** Test Cases ***
-    | Example Test With Switch Case
-    |     ${result}=    Switch Case    apple
-    |     ...    apple=Log    message=Found an apple!
-    |     ...    banana=Log    message=Found a banana!
-    |     ...    orange=Log    message=Found an orange!
-    |     ...    default=Log    message=Unknown fruit
     """
 
     ROBOT_LIBRARY_SCOPE = 'GLOBAL'
